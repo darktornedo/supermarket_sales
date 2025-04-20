@@ -233,7 +233,7 @@ GROUP BY date
 )
   SELECT date, total_sales, previous_day_sales,
   ROUND((total_sales - previous_day_sales),2) as difference,
-  ROUND((total_sales - previous_day_sales) *100 / previous_day_sales,2)
+  ROUND((total_sales - previous_day_sales) *100 / previous_day_sales,2) as sales_growth_percentage
   FROM previous_day_sale;
 ```
 ## Recommendation
