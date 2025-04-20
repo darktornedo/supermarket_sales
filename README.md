@@ -1,4 +1,4 @@
-# supermarket_sales
+# Supermarket Sales Analysis SQL Project 
 ## Project Overview
 
 **Project Title**: Retail Sales Analysis  
@@ -186,7 +186,7 @@ GROUP BY gender, product_line
 
 8. **Task 8: write a query to show what time of day sees the highest number of sales**:
 ```sql
-SELECT HOUR(purchase_time) as hour, ROUND(SUM(total),2) as total_sales 
+SELECT DATE_FORMAT(purchase_time, '%h:%m %p') as hour, ROUND(SUM(total),2) as total_sales 
 FROM supermarket_sales
 GROUP BY hour
 ORDER BY total_sales DESC;
@@ -238,4 +238,10 @@ GROUP BY date
   FROM previous_day_sale;
 ```
 ## Recommendation
-  1. 
+  1. Based on the high sales of Food and Beverages, the supermarket should increase inventory and run targeted promotions for this category to maximize revenue.
+  2. Branch B has lower sales and ratings compared to Branch A and C. Management should investigate local factors and run special offers or community events to boost sales. 
+  3. Peak hours occur mainly at 7 PM. Staffing should be optimized during that hour to reduce wait times and improve customer experience.
+  4. Customers made more payments with Ewallet then other payment methods so try to give 5% or 10% discount whenever customers made payments with Ewallet.
+  5. Members spend more then Non-Members try Expand loyalty program and give member-only offers.
+  6. In Gender category Female purchased more Fashion accessories products and Male purchased Health and beauty products, try giving them a special discount on these items they purchased most.
+  7. Average number of products brought per transaction is 5 so declare a offer that when a customer purchased 5 or more then 5 products they can get 1 product for free.
