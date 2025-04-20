@@ -244,3 +244,4 @@ GROUP BY date
   5. Members spend more then Non-Members try Expand loyalty program and give member-only offers.
   6. In Gender category Female purchased more Fashion accessories products and Male purchased Health and beauty products, try giving them a special discount on these items they purchased most.
   7. Average number of products brought per transaction is 5 so declare a offer that when a customer purchased 5 or more then 5 products they can get 1 product for free.
+  8. The least selling product line is Health and beauty but it's the most purchased product line in Male category and least purchased product line in Female category try introducing more varieties in this product line for Female's.
